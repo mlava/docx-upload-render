@@ -6,6 +6,14 @@
   "scripts": {
     "build": "webpack"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlava/docx-upload-render.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mlava/docx-upload-render/issues"
+  },
+  "homepage": "https://github.com/mlava/docx-upload-render#readme",
   "author": "Mark Lavercombe",
   "license": "ISC",
   "devDependencies": {
