@@ -1,6 +1,6 @@
 Roam Research allows you to upload and render pdfs, but until now you couldn't do that for DOCX files. You can with this extension.
 
-Drag, paste or `/upload` a docx file into your graph and the extension will recognise the file, and render it in place.
+Drag & drop, paste or `/upload` a docx file into your graph and the extension will recognise the file, and render it in place.
 
 If your document is more than one page long, the docx previewer will try to paginate and show buttons as below.
 
