@@ -1,0 +1,38 @@
+{
+  "name": "docx-import-render",
+  "version": "1.0.0",
+  "description": "Import and Render docx files in Roam Research",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "Mark Lavercombe",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "sass": "^1.89.2",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  },
+  "overrides": {
+    "roamjs-components": {
+      "react": "17.0.2",
+      "react-dom": "17.0.2"
+    },
+    "react-doc-render": {
+      "react": "17.0.2",
+      "react-dom": "17.0.2"
+    }
+  },
+  "dependencies": {
+    "docx-preview": "^0.3.5",
+    "react-doc-render": "^0.1.54",
+    "roamjs-components": "^0.85.1"
+  }
+}
