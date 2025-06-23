@@ -7,3 +7,6 @@ If your document is more than one page long, the docx previewer will try to pagi
 If your document is a single page the buttons will not appear.
 
 With many thanks to [@dvargas92495](https://github.com/dvargas92495) and [@mdroidian](https://github.com/mdroidian) for their brilliant work and community contribution of https://github.com/RoamJS/roamjs-components. None of my extensions that use react components would be possible without their generosity.
+
+**Limitations:**
+- this extension allows you to preview docx files, but not edit them. AFAIK there are no nodejs packages that will render a docx file in React that would allow editing to occur.
