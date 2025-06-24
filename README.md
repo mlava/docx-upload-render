@@ -6,6 +6,7 @@ Drag & drop, paste or `/upload` a docx file into your graph and the extension wi
 
 If your document is more than one page long, the docx previewer will try to paginate and show buttons as below. (If your document is a single page the buttons will not appear.)
 
+![Nav buttons](image-1.png)
 
 You can also examine existing pages for docx files you've uploaded to your graph, and convert them to the correct format to allow them to render.
 
