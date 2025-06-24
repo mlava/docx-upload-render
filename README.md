@@ -28,7 +28,7 @@ There are several ways you can do this:
 
 With many thanks to [@dvargas92495](https://github.com/dvargas92495) and [@mdroidian](https://github.com/mdroidian) for their brilliant work and community contribution of https://github.com/RoamJS/roamjs-components. None of my extensions that use react components would be possible without their generosity.
 
-**Limitations:**
+**Important Limitations:**
 - this extension allows you to preview docx files, but not edit them. AFAIK there are no nodejs packages that will render a docx file in React that would allow editing to occur.
 - there might be some rendering issues for some content, as the imported library converts the docx content to html to render it.
 - some docx documents will appear very long, as the renderer looks for page breaks within the source and if it doesn't find any it continues to render the content without forcing a page break
