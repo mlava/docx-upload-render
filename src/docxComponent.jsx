@@ -2,11 +2,15 @@ import React, { useRef, useEffect, useState } from "react";
 import * as docx from "docx-preview";
 import { createComponentRender } from "roamjs-components/components/ComponentContainer";
 
+function extractDocxUrl(blockString) {
+    const match = blockString.match(/docxdoc:\s*(.+?)(}})?$/);
+    return match ? match[1].trim() : "";
+}
+
 function DocxViewer({ blockUid }) {
-    let blockData = window.roamAlphaAPI.data.pull("[:block/string]", `[:block/uid \"${blockUid}\"]`);
-    blockData = blockData[":block/string"].split("docxdoc:")[1];
-    blockData = blockData.trim();
-    var fileUrl = blockData.slice(0, -2);
+    const blockObj = window.roamAlphaAPI.data.pull("[:block/string]", [":block/uid", blockUid]);
+    const blockString = blockObj?.[":block/string"] || "";
+    const fileUrl = extractDocxUrl(blockString);
 
     const [sections, setSections] = useState([]);
     const [styleNodes, setStyleNodes] = useState([]);
@@ -40,6 +44,12 @@ function DocxViewer({ blockUid }) {
                     setSections(sectionNodes.map(node => node.cloneNode(true)));
                     setCurrentPage(0);
                 });
+            })
+            .catch(err => {
+                if (containerRef.current) {
+                    containerRef.current.innerText = "Failed to load DOCX file.";
+                }
+                console.error("Error loading DOCX:", err);
             });
     }, [fileUrl]);
 
