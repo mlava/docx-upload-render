@@ -2,6 +2,8 @@ Roam Research allows you to upload and render pdfs, but until now you couldn't d
 
 Drag & drop, paste or `/upload` a docx file into your graph and the extension will recognise the file, and render it in place.
 
+![Example docx](image.png)
+
 If your document is more than one page long, the docx previewer will try to paginate and show buttons as below. (If your document is a single page the buttons will not appear.)
 
 
